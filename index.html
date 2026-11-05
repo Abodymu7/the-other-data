@@ -337,10 +337,10 @@ input.ltr,textarea.ltr{direction:ltr;text-align:left}
 <div class="sheet" id="shSettings"><div class="grab"></div>
   <div class="hd"><h3>إعدادات DeepSeek</h3><button class="iconbtn" data-close>✕</button></div>
   <div class="bd" style="display:grid;gap:14px">
-    <p class="hint" style="margin:0">المفتاح يُحفظ على هذا الجهاز فقط ولا يُرفع مع الموقع. تحصل عليه من platform.deepseek.com ← API Keys.</p>
-    <div class="fld"><label>مفتاح API <span class="en">API key</span></label><input id="dsKey" type="password" class="ltr" placeholder="sk-..." autocomplete="off"></div>
+    <p class="hint" style="margin:0">✅ المساعد مفعّل للجميع تلقائياً عبر خادم الأكاديمية، وما يحتاج مفتاح. إذا تريد تستخدم حساب DeepSeek خاص بيك، حط مفتاحك هنا (يُحفظ على هذا الجهاز فقط).</p>
+    <div class="fld"><label>مفتاح خاص (اختياري) <span class="en">own API key</span></label><input id="dsKey" type="password" class="ltr" placeholder="sk-..." autocomplete="off"></div>
     <div class="fld"><label>النموذج <span class="en">model</span></label>
-      <select id="dsModel"><option value="deepseek-chat">deepseek-chat</option><option value="deepseek-flash">deepseek-flash</option><option value="deepseek-v4-pro">deepseek-v4-pro (أبطأ وأدق)</option><option value="deepseek-reasoner">deepseek-reasoner</option></select></div>
+      <select id="dsModel"><option value="deepseek-flash">deepseek-flash (سريع، مستحسن)</option><option value="deepseek-v4-pro">deepseek-v4-pro (أبطأ وأدق)</option></select></div>
     <div class="row"><button class="btn" id="dsTest">اختبار الاتصال</button><span class="hint" id="dsTestOut"></span></div>
   </div>
   <div class="ft"><button class="btn pri" id="dsSave">حفظ</button></div>
@@ -721,17 +721,18 @@ function renderRecords() {
 }
 
 /* ================= DeepSeek assistant ================= */
-let DS = Object.assign({ key: '', model: 'deepseek-chat' }, LS.get('otherData.ds', {}));
+const PROXY = 'https://dwi-web.site/otherdata-ai/';
+let DS = Object.assign({ key: '', model: 'deepseek-flash' }, LS.get('otherData.ds', {}));
+if (!['deepseek-flash', 'deepseek-v4-pro'].includes(DS.model)) DS.model = 'deepseek-flash';
 function openSettings() { $('#dsKey').value = DS.key; $('#dsModel').value = DS.model; $('#dsTestOut').textContent = ''; openSheet('shSettings'); }
 $('#dsSave').addEventListener('click', () => { DS.key = $('#dsKey').value.trim(); DS.model = $('#dsModel').value; LS.set('otherData.ds', DS); closeSheets(); toast('تم حفظ الإعدادات'); renderChat(); });
 $('#dsTest').addEventListener('click', async () => {
   const out = $('#dsTestOut'); out.textContent = '...';
   try {
-    const r = await fetch('https://api.deepseek.com/models', { headers: { Authorization: 'Bearer ' + $('#dsKey').value.trim() } });
+    const k = $('#dsKey').value.trim();
+    const r = k ? await fetch('https://api.deepseek.com/models', { headers: { Authorization: 'Bearer ' + k } }) : await fetch(PROXY);
     if (!r.ok) throw new Error(r.status === 401 ? 'المفتاح غير صحيح' : 'خطأ ' + r.status);
-    const j = await r.json(); const ids = (j.data || []).map(m => m.id);
-    out.textContent = '✅ متصل · ' + ids.join('، ');
-    const sel = $('#dsModel'); ids.forEach(id => { if (![...sel.options].some(o => o.value === id)) sel.add(new Option(id, id)); });
+    out.textContent = k ? '✅ متصل بمفتاحك الخاص' : '✅ متصل بخادم الأكاديمية';
   } catch (e) { out.textContent = '❌ ' + e.message; }
 });
 
@@ -779,7 +780,6 @@ function renderChat() {
   $$('#aiKind button').forEach(b => b.classList.toggle('on', b.dataset.k === AI.kind));
   const box = $('#msgs'); const kind = AI.kind;
   let html = '';
-  if (!DS.key) html += '<div class="keybox"><b>🔑 فعّل المساعد</b><p class="hint" style="margin:6px 0 10px">حتى يشتغل المساعد لازم تضيف مفتاح DeepSeek API مرة وحدة على هذا الجهاز.</p><button class="btn sm pri" data-open-settings>إضافة المفتاح</button></div>';
   html += AI.msgs.map((m, i) => {
     let meta = '';
     if (m.set && m.set.length) meta += m.set.map(k => '<span class="tag">✓ ' + esc(FIELD_LABEL(kind, k)) + '</span>').join('');
@@ -844,7 +844,6 @@ function applyAI(kind, res) {
   return { set: [...new Set(setKeys)], skip, next };
 }
 async function sendAI(text, isRetry) {
-  if (!DS.key) { if (!isRetry) pushMsg({ role: 'u', text }); pushMsg({ role: 'e', text: 'أضف مفتاح DeepSeek من القائمة ← إعدادات DeepSeek.' }); openSettings(); return; }
   const kind = AI.kind;
   if (!isRetry) AI.msgs.push({ role: 'u', text });
   const state = { filled: AI.draft, skipped: AI.skipped, attachments: FILES.ai.length };
@@ -853,10 +852,12 @@ async function sendAI(text, isRetry) {
   AI.busy = true; saveAI(); renderChat();
   try {
     const hist = AI.hist.slice(-16).map((m, i, arr) => i < arr.length - 1 && m.role === 'user' ? { role: 'user', content: m.content.split(NL + NL + '[')[0] } : m);
-    const body = { model: DS.model || 'deepseek-chat', temperature: 0.2, response_format: { type: 'json_object' }, messages: [{ role: 'system', content: sysPrompt(kind) }, ...hist] };
-    if (/reasoner|v4-pro/.test(body.model)) { delete body.temperature; }
-    const r = await fetch('https://api.deepseek.com/chat/completions', { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + DS.key }, body: JSON.stringify(body) });
-    if (!r.ok) { const t = await r.text(); throw new Error(r.status === 401 ? 'المفتاح غير صحيح' : r.status === 402 ? 'الرصيد غير كافٍ في حساب DeepSeek' : 'خطأ ' + r.status + ' ' + t.slice(0, 120)); }
+    const body = { model: DS.model || 'deepseek-flash', response_format: { type: 'json_object' }, messages: [{ role: 'system', content: sysPrompt(kind) }, ...hist] };
+    if (body.model === 'deepseek-flash') body.reasoning_effort = 'low';
+    const r = DS.key
+      ? await fetch('https://api.deepseek.com/chat/completions', { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + DS.key }, body: JSON.stringify(body) })
+      : await fetch(PROXY, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+    if (!r.ok) { const t = await r.text(); throw new Error(r.status === 401 ? 'المفتاح غير صحيح' : r.status === 402 ? 'رصيد DeepSeek خلص' : r.status === 429 ? 'طلبات كثيرة، انتظر شوية وجرّب' : 'خطأ ' + r.status + ' ' + t.slice(0, 120)); }
     const j = await r.json(); const content = j.choices?.[0]?.message?.content || '';
     const res = parseJSON(content);
     if (!res) throw new Error('رد غير مفهوم من المساعد');
