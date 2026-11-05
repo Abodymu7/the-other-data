@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1188" width="840" height="1188" font-family="'IBM Plex Sans Arabic','Segoe UI',Tahoma,sans-serif">
+<defs><linearGradient id="cline" x1="0" x2="1"><stop offset="0" stop-color="#7F5132"/><stop offset=".3" stop-color="#E3AF84"/><stop offset=".55" stop-color="#A8734A"/><stop offset=".8" stop-color="#E0AC80"/><stop offset="1" stop-color="#7C4F30"/></linearGradient><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#3f5a5c"/></marker></defs>
+<rect width="840" height="1188" fill="#ffffff"/>
+<svg x="28" y="12" width="156.0" height="96" viewBox="0 0 1120.0 689.15">
+
+<defs><linearGradient id="blade" x1="0" y1="0.1" x2="1" y2="0.9"><stop offset="0" stop-color="#B57A4D"/><stop offset="0.28" stop-color="#DDA77B"/><stop offset="0.52" stop-color="#93603A"/><stop offset="0.78" stop-color="#D9A57B"/><stop offset="1" stop-color="#B07548"/></linearGradient><linearGradient id="copper" gradientUnits="userSpaceOnUse" x1="60" y1="456.11" x2="1060" y2="705.71"><stop offset="0" stop-color="#7F5132"/><stop offset="0.16" stop-color="#B97E52"/><stop offset="0.3" stop-color="#E3AF84"/><stop offset="0.42" stop-color="#C68D60"/><stop offset="0.55" stop-color="#94603A"/><stop offset="0.68" stop-color="#C1885B"/><stop offset="0.8" stop-color="#E0AC80"/><stop offset="0.92" stop-color="#A46C43"/><stop offset="1" stop-color="#7C4F30"/></linearGradient></defs>
+<g id="symbol"><path fill="#084D51" d="M304.42 146.33L372.44 146.33L372.44 334.75A76.47 76.47 0 0 0 525.38 334.75L525.38 307.36A303.54 303.54 0 0 1 593.41 219.92L593.41 334.75A144.5 144.5 0 0 1 304.42 334.75Z"/><path fill="#084D51" d="M558.53 218.29A123.63 123.63 0 0 1 721.24 107.32A137.05 137.05 0 0 1 718.99 367.99L814.03 475.75L726.25 475.75L630.7 367.41L630.7 306.2L677.75 306.2A68.91 68.91 0 0 0 688.43 169.21A140.5 140.5 0 0 0 558.53 218.29Z"/><path fill="url(#blade)" d="M355.43 60.08C427.4 62.39 539.41 116.52 554.99 222.18A257.72 257.72 0 0 0 355.43 127.53Z"/></g>
+<g id="wordmark" fill="url(#copper)"><path id="U" d="M60.04 534.78L60.04 580.61C60.04 614.85 80.5 629.05 107.49 629.05C134.48 629.05 154.94 614.85 154.94 580.61L154.94 534.78L133.69 534.78L133.69 587.32C133.69 597.28 122.69 609.99 107.49 609.99C92.29 609.99 81.29 597.28 81.29 587.32L81.29 534.78Z"/><path id="R" d="M167.77 534.78L222.51 534.78C243.76 534.78 255.7 547.8 255.7 563.68C255.7 579.57 243.76 592.59 222.51 592.59L220.64 592.59L260.79 628L230.74 628L188.82 591.03L188.82 628L167.77 628L167.77 573.06L226.91 573.06A9.38 9.38 0 0 0 226.91 554.31L167.77 554.31Z"/><path id="A1" d="M351.73 534.78L407.59 628L384.14 628L351.73 573.9L319.33 628L295.88 628Z"/><path id="A2" d="M558.1 534.78L613.95 628L590.5 628L558.1 573.9L525.69 628L502.24 628Z"/><path id="C" d="M501.99 553.35C493.77 542.74 478.07 532.68 456.8 532.68C428.97 532.68 405.58 555.05 405.58 580.91C405.58 606.77 428.97 629.15 456.8 629.15C478.07 629.15 493.77 619.08 501.99 608.48L487.23 595.65C480.47 603.22 472.57 609.24 457.57 609.24C439.42 609.24 426.15 596.76 426.15 580.91C426.15 565.06 439.42 552.58 457.57 552.58C472.57 552.58 480.47 558.61 487.23 566.17Z"/><path id="D" d="M619.88 534.78L669.08 534.78C700.37 534.78 717.89 555.55 717.89 581.39C717.89 607.23 700.37 628 669.08 628L619.88 628ZM640.94 554.5L640.94 608.86L668.98 608.86C687.36 608.86 697.02 596.42 697.02 581.39C697.02 566.36 687.36 554.5 668.98 554.5Z"/><path id="E" d="M730.33 534.78L815.8 534.78L815.8 554.31L751.38 554.31L751.38 571.53L803.07 571.53L803.07 590.29L751.38 590.29L751.38 608.48L815.8 608.48L815.8 628L730.33 628Z"/><path id="M" d="M830.63 534.78L886.18 580.61L941.73 534.78L941.73 628L921.24 628L921.24 576.92L886.18 606.56L851.11 576.92L851.11 628L830.63 628Z"/><path id="Y" d="M950.15 534.78L977.06 534.78L1004.82 568.63L1032.57 534.78L1059.48 534.78L1015.34 588.61L1015.34 628L994.29 628L994.29 588.61Z"/></g>
+</svg>
+
+<text x="800" y="52" font-size="23" font-weight="700" fill="#084D51" text-anchor="end">The Other Data — Flowchart</text>
+<text x="800" y="78" font-size="14" font-weight="600" fill="#96603a" text-anchor="end">مخطط رقم 1 لإعداد الدراسات لتنظيم البيانات</text>
+<rect x="40" y="110" width="760" height="2.2" fill="url(#cline)"/>
+<rect x="270" y="128" width="300" height="56" rx="28" fill="#084D51" stroke="#084D51" stroke-width="2"/>
+<text x="420" y="153" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">The Other Data</text>
+<text x="420" y="170" font-size="14.5" font-weight="500" fill="#e2c3a6" text-anchor="middle">Initial Data · البيانات الأولية</text>
+<circle cx="270" cy="128" r="11" fill="#96603a"/>
+<text x="270" y="132.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<path d="M420 184V204H215V226" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M420 204H625V226" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="110" y="230" width="210" height="50" rx="8" fill="#e8f1f0" stroke="#084D51" stroke-width="1.8"/>
+<text x="215" y="252" font-size="16" font-weight="700" fill="#084D51" text-anchor="middle">People</text>
+<text x="215" y="269" font-size="13.5" font-weight="500" fill="#6b7b7b" text-anchor="middle">الأشخاص</text>
+<circle cx="110" cy="230" r="11" fill="#084D51"/>
+<text x="110" y="234.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<rect x="520" y="230" width="210" height="50" rx="8" fill="#f8f0e8" stroke="#96603a" stroke-width="1.8"/>
+<text x="625" y="252" font-size="16" font-weight="700" fill="#96603a" text-anchor="middle">Competitors</text>
+<text x="625" y="269" font-size="13.5" font-weight="500" fill="#6b7b7b" text-anchor="middle">المنافسون</text>
+<circle cx="520" cy="230" r="11" fill="#96603a"/>
+<text x="520" y="234.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<path d="M215 280V302" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M625 280V302" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M82 306H360L348 501H70Z" fill="#fff" stroke="#084D51" stroke-width="1.6"/>
+<text x="215.0" y="328" font-size="12.5" font-weight="700" fill="#084D51" text-anchor="middle">Input <tspan fill="#6b7b7b" font-weight="500" font-size="11.5">· إدخال</tspan></text>
+<line x1="92" y1="340" x2="338" y2="340" stroke="#084D51" stroke-opacity=".35"/>
+<circle cx="100" cy="358.5" r="3" fill="#084D51"/>
+<text x="112" y="363" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">name</text>
+<text x="334" y="363" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">الاسم</text>
+<circle cx="100" cy="387.5" r="3" fill="#084D51"/>
+<text x="112" y="392" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">family</text>
+<text x="334" y="392" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">العائلة</text>
+<circle cx="100" cy="416.5" r="3" fill="#084D51"/>
+<text x="112" y="421" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">class</text>
+<text x="334" y="421" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">الصف / الفئة</text>
+<circle cx="100" cy="445.5" r="3" fill="#084D51"/>
+<text x="112" y="450" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">number , account</text>
+<text x="334" y="450" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">الرقم / الحساب</text>
+<circle cx="100" cy="474.5" r="3" fill="#084D51"/>
+<text x="112" y="479" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">GPS</text>
+<text x="334" y="479" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">الموقع</text>
+<path d="M492 306H770L758 617H480Z" fill="#fff" stroke="#96603a" stroke-width="1.6"/>
+<text x="625.0" y="328" font-size="12.5" font-weight="700" fill="#96603a" text-anchor="middle">Input <tspan fill="#6b7b7b" font-weight="500" font-size="11.5">· إدخال</tspan></text>
+<line x1="502" y1="340" x2="748" y2="340" stroke="#96603a" stroke-opacity=".35"/>
+<circle cx="510" cy="358.5" r="3" fill="#96603a"/>
+<text x="522" y="363" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">name</text>
+<text x="744" y="363" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">الاسم</text>
+<circle cx="510" cy="387.5" r="3" fill="#96603a"/>
+<text x="522" y="392" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">content</text>
+<text x="744" y="392" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">المحتوى</text>
+<circle cx="510" cy="416.5" r="3" fill="#96603a"/>
+<text x="522" y="421" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">courses</text>
+<text x="744" y="421" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">الدورات</text>
+<circle cx="510" cy="445.5" r="3" fill="#96603a"/>
+<text x="522" y="450" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">people</text>
+<text x="744" y="450" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">الأشخاص</text>
+<circle cx="510" cy="474.5" r="3" fill="#96603a"/>
+<text x="522" y="479" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">marketing method</text>
+<text x="744" y="479" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">التسويق</text>
+<circle cx="510" cy="503.5" r="3" fill="#96603a"/>
+<text x="522" y="508" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">number (name owners)</text>
+<text x="744" y="508" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">الرقم / المالك</text>
+<circle cx="510" cy="532.5" r="3" fill="#96603a"/>
+<text x="522" y="537" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">GPS</text>
+<text x="744" y="537" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">الموقع</text>
+<circle cx="510" cy="561.5" r="3" fill="#96603a"/>
+<text x="522" y="566" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">accounts</text>
+<text x="744" y="566" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">الحسابات</text>
+<circle cx="510" cy="590.5" r="3" fill="#96603a"/>
+<text x="522" y="595" font-size="13.5" font-weight="600" fill="#10302f" text-anchor="start">position</text>
+<text x="744" y="595" font-size="12.5" font-weight="500" fill="#6b7b7b" text-anchor="end">الموقع التنافسي</text>
+<path d="M215 501V523" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="50" y="527" width="330" height="296" rx="10" fill="#fff" stroke="#084D51" stroke-width="1.8"/>
+<rect x="50" y="527" width="330" height="56" rx="10" fill="#084D51"/><rect x="50" y="567" width="330" height="16" fill="#084D51"/>
+<text x="215" y="551" font-size="14.5" font-weight="700" fill="#fff" text-anchor="middle">Functional &amp; Psychological Assessment</text>
+<text x="215" y="569" font-size="12.0" font-weight="500" fill="#e2c3a6" text-anchor="middle">التقييم الوظيفي والنفسي · طريقة التعامل</text>
+<circle cx="50" cy="527" r="11" fill="#96603a"/>
+<text x="50" y="531.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<rect x="66" y="593" width="4" height="36" rx="2" fill="url(#cline)"/>
+<text x="80" y="607" font-size="13" font-weight="700" fill="#084D51" text-anchor="start">Scientific</text>
+<text x="364" y="607" font-size="13" font-weight="700" fill="#10302f" text-anchor="end">الوضع العلمي</text>
+<text x="364" y="626" font-size="12" font-weight="500" fill="#6b7b7b" text-anchor="end">التحصيل الدراسي لأفراد العائلة</text>
+<rect x="66" y="639" width="4" height="54" rx="2" fill="url(#cline)"/>
+<text x="80" y="653" font-size="13" font-weight="700" fill="#084D51" text-anchor="start">Social</text>
+<text x="364" y="653" font-size="13" font-weight="700" fill="#10302f" text-anchor="end">الوضع الاجتماعي</text>
+<text x="364" y="672" font-size="12" font-weight="500" fill="#6b7b7b" text-anchor="end">القومية + الطائفة</text>
+<text x="364" y="690" font-size="12" font-weight="500" fill="#6b7b7b" text-anchor="end">الاهتمامات على مواقع التواصل الاجتماعي</text>
+<rect x="66" y="703" width="4" height="36" rx="2" fill="url(#cline)"/>
+<text x="80" y="717" font-size="13" font-weight="700" fill="#084D51" text-anchor="start">Political</text>
+<text x="364" y="717" font-size="13" font-weight="700" fill="#10302f" text-anchor="end">الوضع السياسي</text>
+<text x="364" y="736" font-size="12" font-weight="500" fill="#6b7b7b" text-anchor="end">الانتماء الحزبي</text>
+<rect x="66" y="749" width="4" height="36" rx="2" fill="url(#cline)"/>
+<text x="80" y="763" font-size="13" font-weight="700" fill="#084D51" text-anchor="start">Economic</text>
+<text x="364" y="763" font-size="13" font-weight="700" fill="#10302f" text-anchor="end">الوضع الاقتصادي</text>
+<text x="364" y="782" font-size="12" font-weight="500" fill="#6b7b7b" text-anchor="end">معدل الدخل العام للعائلة</text>
+<text x="215" y="809" font-size="11" font-weight="500" fill="#96603a" text-anchor="middle">نفسي · وظيفي · طريقة التعامل المقترحة</text>
+<path d="M625 617V637" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M520 641H730V697Q677 681 625 697T520 699Z" fill="#f8f0e8" stroke="#96603a" stroke-width="1.8"/>
+<text x="625" y="665" font-size="14.5" font-weight="700" fill="#96603a" text-anchor="middle">text / screenshots</text>
+<text x="625" y="682" font-size="12.0" font-weight="500" fill="#6b7b7b" text-anchor="middle">نصوص · لقطات شاشة</text>
+<circle cx="520" cy="641" r="11" fill="#96603a"/>
+<text x="520" y="645.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<path d="M625 701V729" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="520" y="733" width="210" height="48" rx="8" fill="#f8f0e8" stroke="#96603a" stroke-width="1.8"/>
+<text x="625" y="754" font-size="14.5" font-weight="700" fill="#96603a" text-anchor="middle">organize</text>
+<text x="625" y="771" font-size="12.0" font-weight="500" fill="#6b7b7b" text-anchor="middle">تنظيم · فرز</text>
+<circle cx="520" cy="733" r="11" fill="#96603a"/>
+<text x="520" y="737.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<path d="M384 555H450V671H514" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" stroke-dasharray="6 4" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<text x="417" y="547" font-size="11.5" font-weight="600" fill="#6b7b7b" text-anchor="middle">تبادل ↔</text>
+<path d="M215 823V881H256" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M625 781V881H584" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="260" y="849" width="320" height="64" rx="4" fill="#084D51" stroke="#084D51" stroke-width="1.8"/>
+<path d="M274 849V913M566 849V913" stroke="url(#cline)" stroke-width="3"/>
+<text x="420" y="876" font-size="15.5" font-weight="700" fill="#fff" text-anchor="middle">Mental · Heart Portal</text>
+<text x="420" y="895" font-size="13.0" font-weight="500" fill="#e2c3a6" text-anchor="middle">"Build , Discover" · بوابة الذهن والقلب — بناء واكتشاف</text>
+<circle cx="260" cy="849" r="11" fill="#96603a"/>
+<text x="260" y="853.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">7</text>
+<path d="M420 913V929" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="123.0" y="925" font-size="11.5" font-weight="700" fill="#96603a" text-anchor="start">Output · المخرجات</text>
+<rect x="105.0" y="933" width="118" height="46" rx="23" fill="#f8f0e8" stroke="#96603a" stroke-width="1.5"/>
+<text x="164.0" y="953" font-size="13" font-weight="700" fill="#96603a" text-anchor="middle">texts</text>
+<text x="164.0" y="969" font-size="10.5" font-weight="500" fill="#6b7b7b" text-anchor="middle">نصوص</text>
+<rect x="233.0" y="933" width="118" height="46" rx="23" fill="#f8f0e8" stroke="#96603a" stroke-width="1.5"/>
+<text x="292.0" y="953" font-size="13" font-weight="700" fill="#96603a" text-anchor="middle">voices</text>
+<text x="292.0" y="969" font-size="10.5" font-weight="500" fill="#6b7b7b" text-anchor="middle">أصوات</text>
+<rect x="361.0" y="933" width="118" height="46" rx="23" fill="#f8f0e8" stroke="#96603a" stroke-width="1.5"/>
+<text x="420.0" y="953" font-size="13" font-weight="700" fill="#96603a" text-anchor="middle">pictures</text>
+<text x="420.0" y="969" font-size="10.5" font-weight="500" fill="#6b7b7b" text-anchor="middle">صور</text>
+<rect x="489.0" y="933" width="118" height="46" rx="23" fill="#f8f0e8" stroke="#96603a" stroke-width="1.5"/>
+<text x="548.0" y="953" font-size="13" font-weight="700" fill="#96603a" text-anchor="middle">videos</text>
+<text x="548.0" y="969" font-size="10.5" font-weight="500" fill="#6b7b7b" text-anchor="middle">فيديو</text>
+<rect x="617.0" y="933" width="118" height="46" rx="23" fill="#f8f0e8" stroke="#96603a" stroke-width="1.5"/>
+<text x="676.0" y="953" font-size="13" font-weight="700" fill="#96603a" text-anchor="middle">live actions</text>
+<text x="676.0" y="969" font-size="10.5" font-weight="500" fill="#6b7b7b" text-anchor="middle">أفعال مباشرة</text>
+<circle cx="105.0" cy="933" r="11" fill="#96603a"/>
+<text x="105.0" y="937.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">8</text>
+<path d="M420 979V988" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M420 990L510 1025L420 1060L330 1025Z" fill="#fff" stroke="#96603a" stroke-width="1.8"/>
+<text x="420" y="1023" font-size="13" font-weight="700" fill="#96603a" text-anchor="middle">Single / Group</text>
+<text x="420" y="1039" font-size="10.5" font-weight="500" fill="#6b7b7b" text-anchor="middle">فردي أم جماعي؟‏</text>
+<path d="M330 1025H286V1115H338" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M510 1025H554V1115H502" fill="none" stroke="#3f5a5c" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="280" y="1065" font-size="11.5" font-weight="600" fill="#6b7b7b" text-anchor="end">Single · فردي</text>
+<text x="560" y="1065" font-size="11.5" font-weight="600" fill="#6b7b7b" text-anchor="start">Group · جماعي</text>
+<path d="M340 1082V1143A80 11 0 0 0 500 1143V1082" fill="#084D51" stroke="#084D51" stroke-width="1.8"/>
+<ellipse cx="420" cy="1082" rx="80" ry="11" fill="#2b6b6f" stroke="#084D51" stroke-width="1.8"/>
+<text x="420" y="1115" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">XLSX</text>
+<text x="420" y="1134" font-size="12.5" font-weight="500" fill="#e2c3a6" text-anchor="middle">المخرج النهائي · Excel</text>
+<circle cx="340" cy="1077" r="11" fill="#96603a"/>
+<text x="340" y="1081.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">9</text>
+</svg>
